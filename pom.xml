@@ -3,6 +3,27 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
+
+    <dependencies>
+
+<dependency>
+ <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+  </dependency>
+  
+  <!--dependencia de JUNit5 -->
+    
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter-engine</artifactId>
+  <version>5.1.0</version>
+  <scope>test</scope>
+ </dependency>
+
+</dependencies>
+
+
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot</artifactId>
     <version>0.1.0</version>
@@ -12,27 +33,15 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.4.RELEASE</version>
     </parent>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-    </dependencies>
 	
-	<dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-engine</artifactId>
-    <version>5.1.0</version>
-    <scope>test</scope>
-</dependency>
 
+
+    <build>
+	
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
-
-    <build>
     <plugins>
     <plugin>
        <groupId>org.jacoco</groupId>
